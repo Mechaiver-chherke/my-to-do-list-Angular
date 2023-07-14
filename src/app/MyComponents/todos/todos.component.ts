@@ -30,4 +30,9 @@ export class TodosComponent {
       },
     ];
   }
+  deleteTodo(todo: Todo) {
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1);
+    console.log(todo);
+  }
 }
